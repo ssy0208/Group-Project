@@ -1,0 +1,231 @@
+/* ------------------ GLOBAL STYLES ------------------ */
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* ------------------ GENERAL BODY STYLING ------------------ */
+body {
+    background: url('../images/bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ------------------ HEADER ------------------ */
+header {
+    background-color: rgba(179, 0, 0, 0.9);
+    color: white;
+    padding: 1.5em 2em;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+/* ------------------ TITLES ------------------ */
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* ------------------ CONTAINER BOX ------------------ */
+.container {
+    background: rgba(255,255,255,0.95);
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 15px;
+    max-width: 1100px;
+}
+
+/* ------------------ FORM INPUTS ------------------ */
+input[type=text], input[type=password], input[type=number],
+input[type=date], input[type=time], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* ------------------ BUTTONS ------------------ */
+button, input[type=submit], a.button {
+    background-color: #cc9900;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+}
+a.button:hover, input[type=submit]:hover {
+    background-color: #b38600;
+}
+
+/* ------------------ TABLE STYLES ------------------ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+th, td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #b30000;
+    color: white;
+}
+
+/* ------------------ ICON ACTION BUTTONS ------------------ */
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    background-color: #cc9900;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+.icon-btn:hover {
+    transform: scale(1.1);
+    background-color: #fff5e6;
+}
+
+/* ------------------ SEARCH BAR ------------------ */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.search-bar input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* ------------------ TOP RIGHT ALIGNMENT ------------------ */
+.top-right {
+    float: right;
+    margin-top: -50px;
+}
+
+/* ------------------ FOOTER LOGOUT ------------------ */
+footer.logout {
+    text-align: center;
+    margin-top: 60px;
+}
+footer.logout a {
+    display: inline-block;
+    font-size: 1.3em;
+    border: 1px solid #b30000;
+    border-radius: 6px;
+    padding: 8px 16px;
+    background-color: #b30000;
+    color: #fff0f0;
+    text-decoration: none;
+}
+footer.logout a:hover {
+    background-color: #f97272;
+}
+
+/* ------------------ BACK ARROW BUTTON ------------------ */
+.arrow-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 45px;
+    background-color: #cc9900;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    color: white;
+}
+.arrow-button:hover {
+    transform: scale(1.1);
+}
+
+/* ------------------ MENU GRID ------------------ */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.menu-card {
+    text-align: center;
+    padding: 35px;
+    background: #fff5e6;
+    border: 2px solid #cc9900;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #b30000;
+    transition: transform 0.2s ease-in-out;
+}
+.menu-card:hover {
+    transform: scale(1.05);
+    background: #ffeacc;
+}
+.menu-card .icon {
+    font-size: 2em;
+    display: block;
+}
+
+/* ------------------ BOTTOM RIGHT POSITIONING ------------------ */
+.bottom-right {
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* ------------------ LOGIN FORM STYLING ------------------ */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.login-box {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+.login-box h2 {
+    text-align: center;
+}
+.login-box button {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
